@@ -6,5 +6,5 @@
 
     <!-- Launch the example in that namespace -->
     <node name="plant_launch" pkg="plant_arm_project" type="ros_arm.py" ns="$(arg robot_name)" output="screen" launch-prefix="bash -c 'sleep $(arg start_delay_seconds); $0 $@' "/>
-
+    <node name="test_launch" pkg="plant_arm_project" type="ros_vis.py" ns="$(arg robot_name)" output="screen" launch-prefix="bash -c 'sleep $(arg start_delay_seconds); $0 $@' "/>
 </launch>
